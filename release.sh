@@ -23,10 +23,6 @@ git tag ${new_version}
 git push origin ${new_version}
 
 
-# Deploy POMs!
+# Deploy POM
 
-echo -n "GPG key passphrase: "
-read -s gpg_passphrase
-
-mvn -Dgpg.passphrase=${gpg_passphrase} clean package gpg:sign \
-  deploy -DaltDeploymentRepository=${BASE_POM_REPO_ID}::default::${BASE_POM_REPO}
+mvn clean package gpg:sign deploy
