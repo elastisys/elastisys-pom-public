@@ -4,7 +4,7 @@
   <parent>
     <groupId>com.elastisys</groupId>
     <artifactId>elastisys-pom-root</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
   </parent>
   <artifactId>elastisys-pom-public</artifactId>
   <version>1.0.2</version>
